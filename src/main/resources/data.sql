@@ -12,8 +12,6 @@ create table message (
     timePostedEpoch bigint,
     foreign key (postedBy) references account(accountId)
 );
-
--- Starting test values with ids of 9999 to avoid test issues
 insert into account values (9999, 'testuser1', 'password');
 insert into account values (9998, 'testuser2', 'password');
 insert into account values (9997, 'testuser3', 'password');
